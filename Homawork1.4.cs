@@ -7,15 +7,15 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int filledRows;
-            int additionalImages;
+            int remainingPictures;
 
-            int image = 52;
-            int inRowOfPictures = 3;
+            int images = 52;
+            int picturesInRow = 3;
 
-            filledRows = image / inRowOfPictures;
-            additionalImages = image % inRowOfPictures;
+            filledRows = images / picturesInRow;
+            remainingPictures = images % picturesInRow;
 
-            Console.WriteLine($"Количество заполненных рядов картинками: {filledRows}, осталось картинок: {additionalImages}");
+            Console.WriteLine($"Количество заполненных рядов картинками: {filledRows}, осталось картинок: {remainingPictures}");
         }  
     }
 }
