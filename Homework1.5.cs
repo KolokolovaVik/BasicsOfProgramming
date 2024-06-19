@@ -20,12 +20,14 @@ namespace ConsoleApp2
             Console.WriteLine($"\nИсправим ошибку с именем и фамилией!");
             correctName = surname;
             surname = name;
-            Console.WriteLine($"Ваше имя: {correctName}, ваша фамилия {surname}");
+            name = correctName;
+            Console.WriteLine($"Ваше имя: {name}, ваша фамилия {surname}");
 
             Console.WriteLine($"\nИсправим ошибку с напитками!");
             newCupOfTea = cupOfCoffee;
             cupOfCoffee = cupOfTea;
-            Console.WriteLine($"В чашке для чая налит: {newCupOfTea}, а в чашке для кофе: {cupOfCoffee}");
+            cupOfTea = newCupOfTea;
+            Console.WriteLine($"В чашке для чая налит: {cupOfTea}, а в чашке для кофе: {cupOfCoffee}");
         }
     }
 }
