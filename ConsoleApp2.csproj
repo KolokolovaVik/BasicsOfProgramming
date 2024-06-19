@@ -46,6 +46,7 @@
     <Compile Include="DZ2.cs" />
     <Compile Include="Homawork1.4.cs" />
     <Compile Include="Homework1.3.cs" />
+    <Compile Include="Homework1.5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
