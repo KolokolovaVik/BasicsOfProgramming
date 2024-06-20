@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Homework1.6.cs" />
     <Compile Include="DZ2.cs" />
     <Compile Include="Homawork1.4.cs" />
     <Compile Include="Homework1.3.cs" />
