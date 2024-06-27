@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
@@ -11,9 +7,9 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int patients;
-            int waitTime;
-            int hours;
-            int minutes;
+            int totalWaitingTimeMinutes;
+            int waitingHoursQueue;
+            int waitingMinutesQueue;
 
             int timeSpentOnePatient = 10;
             int oneHourMinutes = 60;
@@ -21,11 +17,11 @@ namespace ConsoleApp2
             Console.WriteLine("Введите кол-во людей в очереди:");
             patients = Convert.ToInt32(Console.ReadLine());
 
-            waitTime = patients * timeSpentOnePatient;
-            hours = waitTime / oneHourMinutes;
-            minutes = waitTime % oneHourMinutes;
+            totalWaitingTimeMinutes = patients * timeSpentOnePatient;
+            waitingHoursQueue = totalWaitingTimeMinutes / oneHourMinutes;
+            waitingMinutesQueue = totalWaitingTimeMinutes % oneHourMinutes;
 
-            Console.WriteLine($"Вы должны отстоять в очереди {hours} часа и {minutes} минут.");
+            Console.WriteLine($"Вы должны отстоять в очереди {waitingHoursQueue} часа и {waitingMinutesQueue} минут.");
         }
     }
 }
